@@ -1,10 +1,204 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
 
 body {
+
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    margin: 0;
+    width: auto%;
+    display: flex; 
+    flex-direction: column;
 }
+
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+    color: aliceblue;
+}
+
+h1 {
+    line-height: 1.5em;
+}
+
+
+.header {
+    background-color: whitesmoke;
+    padding: 1rem 1rem;
+
+}
+
+.header a {
+    color: #333;
+    text-decoration: none;
+
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo img {
+    height:4.38rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegation ul {
+    padding: 1rem 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    font-family: cursive ;
+    
+}
+
+.navegation ul li {
+    border-radius: 5px; 
+    
+}
+
+.navegation ul li a {
+    padding: 0.5rem 1rem;
+    transition: all 1s linear;
+    color: rgb(59, 59, 59)
+    
+}
+
+.navegation ul li a:hover {
+    border-radius: 6px;
+    color:tomato;
+}
+
+.section  {
+    background-image: url("../img/first-background.jpg");
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    }
+
+    .section .container  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
+    .section .container button {
+        background-color: tomato;
+        margin:2m 4em;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        font-size: 20px;
+        color: white;
+
+    }
+    .service { 
+        text-align: center;
+        padding: 5rem;
+        display: flex;
+        justify-content: center;
+     }
+     .container-a h2 {
+     
+    font-family: 'Roboto', sans-serif;
+    color: rgb(66, 65, 65);
+    text-align: center;
+    font-size: 2rem;
+    }
+
+    .service .container-a .container-list {
+      display: flex;
+      justify-content: center;  
+      align-items: center;
+      list-style: none;
+    }
+    .service .container-a .container-list .img-service{
+        width: 140px;
+        height: 140px;
+        align-self: center;
+        
+    }
+    .service .container-a .container-list h3{
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 1.5rem;
+    text-align: center;
+    
+
+
+
+}
+
+ .join{
+
+ }
+
+ .nav-join{
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+ }
+
+.join .container-join .join-ul {
+     list-style: none;
+ }
+
+ .join .container-join .join-ul img
+
+ {
+    height: 20px;
+    width: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    
+    border: 1px solid #f44336;
+ }
+
+ .container-footer {
+     color: rgb(95, 93, 95);
+     text-align: center;
+ }
+
+/
+ @media only screen and (min-width:320px) and (max-width:640px)
+{
+    .section {
+        width: auto;
+    }
+    .logo img {
+        height: 2rem; }
+
+        .container .container h2 {
+            font-size: 1rem;}
+
+.service .container-a .container-list li { 
+         flex-direction: column;
+         display: flex;}
+         
+    .service  {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
 
 /**
  * Add your custom styles below
@@ -15,5 +209,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
