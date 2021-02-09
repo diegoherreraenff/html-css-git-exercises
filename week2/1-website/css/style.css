@@ -11,7 +11,7 @@ body {
     line-height: 1.4em;
     margin: 0;
     width: auto%;
-    display: flex; 
+    display: flex;
     flex-direction: column;
 }
 
@@ -30,6 +30,7 @@ h1 {
 .header {
     background-color: whitesmoke;
     padding: 1rem 1rem;
+    width: 100%;
 
 }
 
@@ -47,7 +48,7 @@ h1 {
 }
 
 .logo img {
-    height:4.38rem;
+    height: 4.38rem;
     display: flex;
     justify-content: space-between;
 }
@@ -57,28 +58,27 @@ h1 {
     margin: 0;
     list-style: none;
     display: inline-block;
-    font-family: cursive ;
-    
+    font-family: cursive;
+
 }
 
 .navegation ul li {
-    border-radius: 5px; 
-    
+    border-radius: 5px;
+
 }
 
 .navegation ul li a {
     padding: 0.5rem 1rem;
     transition: all 1s linear;
     color: rgb(59, 59, 59)
-    
 }
 
 .navegation ul li a:hover {
     border-radius: 6px;
-    color:tomato;
+    color: tomato;
 }
 
-.section  {
+.section {
     background-image: url("../img/first-background.jpg");
     width: 100%;
     height: 550px;
@@ -89,118 +89,179 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
-    }
+}
 
-    .section .container  {
+.section .container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    }
-    .section .container button {
-        background-color: tomato;
-        margin:2m 4em;
-        padding: 0.5em 1em;
-        border-radius: 5px;
-        font-size: 20px;
-        color: white;
+}
 
-    }
-    .service { 
-        text-align: center;
-        padding: 5rem;
-        display: flex;
-        justify-content: center;
-     }
-     .container-a h2 {
-     
+.section .container>button {
+    background-color: tomato;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+
+}
+
+.service {
+    text-align: center;
+    padding: 0;
+}
+
+.container-a {
+    width: 100%;
+}
+
+
+.container-a h2 {
+
     font-family: 'Roboto', sans-serif;
     color: rgb(66, 65, 65);
     text-align: center;
     font-size: 2rem;
-    }
+}
 
-    .service .container-a .container-list {
-      display: flex;
-      justify-content: center;  
-      align-items: center;
-      list-style: none;
-    }
-    .service .container-a .container-list .img-service{
-        width: 140px;
-        height: 140px;
-        align-self: center;
-        
-    }
-    .service .container-a .container-list h3{
+.container-list {
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+.container-list>li {
+    list-style: none;
+    width: 100%;
+
+
+}
+
+.img-service {
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+
+}
+
+.container-list>h3 {
     font-weight: 400;
     font-size: 1.563rem;
     margin: 2.5rem 1.5rem;
     text-align: center;
-    
+
 
 
 
 }
 
- .join{
+.join {}
 
- }
-
- .nav-join{
-     display: flex;
-     justify-content: center;
-     flex-direction: row;
- }
+.nav-join {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
 
 .join .container-join .join-ul {
-     list-style: none;
- }
+    list-style: none;
+}
 
- .join .container-join .join-ul img
-
- {
+.join .container-join .join-ul img {
     height: 20px;
     width: 20px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
-    
+
     border: 1px solid #f44336;
- }
+}
 
- .container-footer {
-     color: rgb(95, 93, 95);
-     text-align: center;
- }
-
-/
- @media only screen and (min-width:320px) and (max-width:640px)
-{
-    .section {
-        width: auto;
-    }
-    .logo img {
-        height: 2rem; }
-
-        .container .container h2 {
-            font-size: 1rem;}
-
-.service .container-a .container-list li { 
-         flex-direction: column;
-         display: flex;}
-         
-    .service  {
-        display: flex;
-        flex-direction: column;
-    }
-
-
+.container-footer {
+    color: rgb(95, 93, 95);
+    text-align: center;
 }
 
 
-/**
+
+/** estilos cabecera */
+
+@media only screen and (max-width:695px) {
+    .header .navegation {
+        display: none;
+
+
+    }
+
+    .menu {}
+}
+
+    /** estilos container */
+    @media only screen and (max-width:320px) 
+    {
+    
+        .section {
+        height: 180px;
+        }
+
+        h1 {
+        font-size: 1em;
+        }
+
+        .container>h2 {
+        font-size: 0.9em;
+        }
+
+        .container>button {
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+        padding: 0%;
+        }
+
+        .container-a > h2 {
+        font-size: 1em; }
+
+        .container-list {
+        display: block;
+        }
+    }
+    
+    @media only screen and (max-width:440px)
+    {
+        .section {
+            height: 180px;
+        }
+
+        h1 {
+            font-size: 1em;
+        }
+
+        .container>h2 {
+            font-size: 0.9em;
+        }
+
+        .container > button {
+            font-size: 10px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container-a > h2 {
+            font-size: 1em;
+
+        }
+
+        .container-list {
+            display: block;
+        }
+    }  
+    
+    
+    /**
  * Add your custom styles below
  * 
  * Remember: 
